@@ -1,0 +1,115 @@
+.aboutSection {
+  padding: 4rem 2rem;
+  color: #f8f9fa;
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.aboutText {
+  flex: 1;
+  text-align: center;
+}
+
+.aboutHeading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f39c12;
+  margin-bottom: 1rem;
+}
+
+.aboutDescription {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: white;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.aboutImageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutImage {
+  width: 280px;
+  height: 280px;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.aboutImage:hover {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}
+
+/* Default grayscale filter for desktop view */
+.aboutImageContainer img {
+  filter: grayscale(100%);
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .aboutContainer {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .aboutText {
+    text-align: left;
+  }
+
+  .aboutHeading {
+    font-size: 3rem;
+  }
+
+  .aboutDescription {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablet (768px and below) */
+@media screen and (max-width: 768px) {
+  .aboutHeading {
+    font-size: 2rem;
+  }
+
+  .aboutDescription {
+    font-size: 0.95rem;
+  }
+
+  /* Remove grayscale effect on mobile devices */
+  .aboutImageContainer img {
+    filter: none;
+  }
+}
+
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+  .aboutImage {
+    width: 200px;
+    height: 200px;
+  }
+
+  .aboutHeading {
+    font-size: 1.75rem;
+  }
+
+  .aboutDescription {
+    font-size: 0.85rem;
+  }
+}
