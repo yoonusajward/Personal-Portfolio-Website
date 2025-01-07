@@ -18,8 +18,8 @@ function Projects() {
       description:
         "A responsive portfolio website showcasing my projects, skills, and experience. Built using React and CSS, it features dynamic sections, a projects gallery, and seamless navigation. It provides a platform to highlight my professional journey and accomplishments.",
       tools: ["React", "CSS", "React Router", "EmailJS", "JavaScript"],
-      github: "https://github.com/yoonusajward/portfolio-web",
-      demo: "https://yoonusajward.github.io/portfolio-web/",
+      github: "https://github.com/yoonusajward/Personal-Portfolio-Website",
+      demo: "https://yoonusajward.github.io/Personal-Portfolio-Website/",
       image: portfolioImage,
     },
     {
