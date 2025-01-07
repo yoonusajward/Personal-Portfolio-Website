@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Personal-Portfolio-Website/static/css/main.ed0975d4.css",
+    "main.js": "/Personal-Portfolio-Website/static/js/main.014e9be1.js",
+    "static/media/hero-image.png": "/Personal-Portfolio-Website/static/media/hero-image.f01add477c9c887e7e19.png",
+    "static/media/about-image.png": "/Personal-Portfolio-Website/static/media/about-image.e828251ee373880f7bab.png",
+    "static/media/journey-diaries-homepage.png": "/Personal-Portfolio-Website/static/media/journey-diaries-homepage.2a130b9fcab6692285d9.png",
+    "static/media/alfie-pet-supplies-homepage.png": "/Personal-Portfolio-Website/static/media/alfie-pet-supplies-homepage.55f8e2a83112ddf5e3ff.png",
+    "static/media/triptuner-interfaces.png": "/Personal-Portfolio-Website/static/media/triptuner-interfaces.ab2bb802b672327627ba.png",
+    "static/media/portfolio-homepage.png": "/Personal-Portfolio-Website/static/media/portfolio-homepage.56d6fac5c520ff111e96.png",
+    "static/media/ecommerce-homepage.png": "/Personal-Portfolio-Website/static/media/ecommerce-homepage.17ca72509a3a3cbadd3a.png",
+    "static/media/blackberry-homepage.png": "/Personal-Portfolio-Website/static/media/blackberry-homepage.0db5a18fc5af72c38b9a.png",
+    "static/media/adaptability.png": "/Personal-Portfolio-Website/static/media/adaptability.d66dbbe31eb86c59cfab.png",
+    "static/media/critical-thinking.png": "/Personal-Portfolio-Website/static/media/critical-thinking.fd179e7ef6f717dd5bca.png",
+    "static/media/interpersonal-skills.png": "/Personal-Portfolio-Website/static/media/interpersonal-skills.a65e20170b2377f18495.png",
+    "static/media/task-tracker-homepage.png": "/Personal-Portfolio-Website/static/media/task-tracker-homepage.13a3f3f1253af90b1cb9.png",
+    "static/media/teamwork.png": "/Personal-Portfolio-Website/static/media/teamwork.99eaaec0c3f8cdf19bdb.png",
+    "static/media/problem-solving.png": "/Personal-Portfolio-Website/static/media/problem-solving.fcaec8c8a88b0451ea67.png",
+    "static/media/time-management.png": "/Personal-Portfolio-Website/static/media/time-management.6c1043124734addc3e35.png",
+    "static/media/sinhala.png": "/Personal-Portfolio-Website/static/media/sinhala.533c7a57a48a0f9a0f71.png",
+    "static/media/tamil.png": "/Personal-Portfolio-Website/static/media/tamil.59046a34b3219ec320d5.png",
+    "static/media/english.png": "/Personal-Portfolio-Website/static/media/english.3719ca7fc50bfc3ea89c.png",
+    "static/media/task-manager-homepage.png": "/Personal-Portfolio-Website/static/media/task-manager-homepage.448d5ec9293a82ce6fd9.png",
+    "static/media/logo_navbar.png": "/Personal-Portfolio-Website/static/media/logo_navbar.984a94726a25ef866fb4.png",
+    "index.html": "/Personal-Portfolio-Website/index.html",
+    "main.ed0975d4.css.map": "/Personal-Portfolio-Website/static/css/main.ed0975d4.css.map",
+    "main.014e9be1.js.map": "/Personal-Portfolio-Website/static/js/main.014e9be1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed0975d4.css",
+    "static/js/main.014e9be1.js"
+  ]
+}
