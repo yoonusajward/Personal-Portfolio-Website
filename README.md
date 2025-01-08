@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Yoonus Ajward Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📖 Overview
 
-## Available Scripts
+The **Yoonus Ajward Portfolio Website** is a personal project that showcases my journey as a software engineer and web developer. The site highlights my technical expertise, projects, and professional achievements, providing visitors with an interactive and modern experience.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🖥️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend Framework:** React
+- **Styling:** CSS
+- **Icons:** Font Awesome, React Icons
+- **Routing:** React Router
+- **Email Integration:** EmailJS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🌟 Live Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Visit the live portfolio here: [Yoonus Ajward Portfolio](https://yoonusajward.github.io/Personal-Portfolio-Website/)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Personalised Homepage with Smooth Scrolling
+- Project Portfolio Section with Details and GitHub Links
+- Contact Form Integration via EmailJS
+- Responsive Design for Mobile, Tablet, and Desktop
+- Interactive User Interface with React Icons and Animations
+- Navigation with React Router
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Setup Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Follow these steps to set up and run the portfolio locally:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1. **Prerequisites**
+Ensure you have the following installed on your machine:
+- [Node.js](https://nodejs.org/) (v16+ recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2. **Clone the Repository**
+```bash
+git clone https://github.com/yoonusajward/Personal-Portfolio-Website.git
+cd Personal-Portfolio-Website
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. **Install Dependencies**
+Run the following command to install all required dependencies:
+```bash
+npm install
+```
 
-## Learn More
+### 4. **Start the Development Server**
+Launch the application in development mode:
+```bash
+npm start
+```
+The application will be available at http://localhost:3000.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 5. **Build for Production**  
+To create a production build, run:
+```bash
+npm run build
+```
+The production-ready files will be available in the build folder.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📋 Usage Instructions
 
-### Code Splitting
+### 1. **Explore the Portfolio**
+- Navigate through the homepage to learn more about my skills, projects, and background.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 2. **Check the Project Portfolio**
+- View detailed descriptions of my projects, along with the tools used and GitHub links.
 
-### Analyzing the Bundle Size
+### 3. **Contact Me**
+- Use the integrated contact form to send me a message. The form is powered by EmailJS for seamless communication.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🤝 Contribution
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions are welcome! Feel free to fork the repository and create pull requests to improve or add new features.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📞 Support
 
-### Deployment
+For any questions or issues, please reach out to:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Developer:** Yoonus Ajward
+- **Email:** yoonusajward27@gmail.com
+- **GitHub:** https://github.com/yoonusajward
+- **LinkedIn:** https://linkedin.com/in/yoonus-ajward-461064239 
