@@ -35,6 +35,17 @@ const Navbar = () => {
         </Link>
         <Link
           activeClass="active"
+          to="experience"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="desktopMenuListItem"
+        >
+          Experience
+        </Link>
+        <Link
+          activeClass="active"
           to="education"
           spy={true}
           smooth={true}
@@ -119,6 +130,18 @@ const Navbar = () => {
             onClick={() => setShowMenu(false)}
           >
             About
+          </Link>
+          <Link
+            activeClass="active"
+            to="experience"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className="mobileMenuListItem"
+            onClick={() => setShowMenu(false)}
+          >
+            Experience
           </Link>
           <Link
             activeClass="active"

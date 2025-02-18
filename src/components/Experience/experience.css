@@ -1,0 +1,172 @@
+.experience-section {
+  padding: 3rem 1rem;
+  position: relative;
+  background: rgb(30, 30, 30);
+  color: white;
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.experience-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.experience-divider {
+  height: 2px;
+  width: 5rem;
+  background-color: #e4951e;
+}
+
+.experience-title {
+  background: white;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  color: #1a1443;
+  text-transform: uppercase;
+}
+
+.job-title {
+  background: white;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  color: rgb(30, 30, 30);
+  text-transform: uppercase;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.experience-card {
+  position: relative;
+  background: #f8f8f8;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.experience-duration {
+  font-size: 1rem;
+  color: #e4951e;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.experience-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.experience-icon {
+  color: #e4951e;
+  transition: transform 0.3s ease;
+}
+
+.experience-icon:hover {
+  transform: scale(1.2);
+}
+
+.experience-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.experience-company {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: rgb(30, 30, 30);
+}
+
+.company-website-link {
+  font-size: 1rem;
+  color: #e4951e;
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
+.company-website-link:hover {
+  text-decoration: underline;
+  color: #1a1443;
+}
+
+.experience-tools {
+  font-size: 0.875rem;
+  color: #7c7c7c;
+}
+
+/* Responsive Styles */
+
+/* Tablet (768px and below) */
+@media screen and (max-width: 768px) {
+  .experience-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .experience-title {
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .experience-card {
+    padding: 1.25rem;
+  }
+
+  .experience-duration {
+    font-size: 0.95rem;
+  }
+
+  .experience-title {
+    font-size: 1.125rem;
+  }
+
+  .experience-tools {
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+  .experience-section {
+    padding: 2rem 1rem;
+  }
+
+  .experience-title {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .experience-card {
+    padding: 1rem;
+  }
+
+  .experience-duration {
+    font-size: 0.875rem;
+  }
+
+  .experience-title {
+    font-size: 1rem;
+  }
+
+  .experience-tools {
+    font-size: 0.75rem;
+  }
+}
