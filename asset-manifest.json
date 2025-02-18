@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Personal-Portfolio-Website/static/css/main.ed0975d4.css",
-    "main.js": "/Personal-Portfolio-Website/static/js/main.364577eb.js",
+    "main.css": "/Personal-Portfolio-Website/static/css/main.0fa7ce0d.css",
+    "main.js": "/Personal-Portfolio-Website/static/js/main.66e7c50e.js",
     "static/media/hero-image.png": "/Personal-Portfolio-Website/static/media/hero-image.f01add477c9c887e7e19.png",
     "static/media/about-image.png": "/Personal-Portfolio-Website/static/media/about-image.e828251ee373880f7bab.png",
     "static/media/journey-diaries-homepage.png": "/Personal-Portfolio-Website/static/media/journey-diaries-homepage.2a130b9fcab6692285d9.png",
@@ -23,11 +23,11 @@
     "static/media/task-manager-homepage.png": "/Personal-Portfolio-Website/static/media/task-manager-homepage.448d5ec9293a82ce6fd9.png",
     "static/media/logo_navbar.png": "/Personal-Portfolio-Website/static/media/logo_navbar.984a94726a25ef866fb4.png",
     "index.html": "/Personal-Portfolio-Website/index.html",
-    "main.ed0975d4.css.map": "/Personal-Portfolio-Website/static/css/main.ed0975d4.css.map",
-    "main.364577eb.js.map": "/Personal-Portfolio-Website/static/js/main.364577eb.js.map"
+    "main.0fa7ce0d.css.map": "/Personal-Portfolio-Website/static/css/main.0fa7ce0d.css.map",
+    "main.66e7c50e.js.map": "/Personal-Portfolio-Website/static/js/main.66e7c50e.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed0975d4.css",
-    "static/js/main.364577eb.js"
+    "static/css/main.0fa7ce0d.css",
+    "static/js/main.66e7c50e.js"
   ]
 }
