@@ -1,6 +1,7 @@
 import React from "react";
 import "./experience.css";
 import { BsBriefcase } from "react-icons/bs";
+import { FiExternalLink } from "react-icons/fi";
 import GlowCard from "../GlowCard/glowcard";
 
 const experiences = [
@@ -10,14 +11,25 @@ const experiences = [
     company: "Accron Revolutions",
     companyWebsite: "https://www.accronautobot.com/",
     duration: "Jan 2025 - Present",
+    description: [
+      "Contributed to real-world projects including POS systems, order management platforms, websites, and mobile apps.",
+      "Developed and maintained scalable backend features using Firebase and RESTful APIs.",
+      "Structured and optimized Firestore (NoSQL) databases for performance and reliability.",
+      "Implemented new backend functionalities, debugged existing code, and improved system architecture.",
+      "Integrated APIs and connected cloud-based services to ensure smooth data flow across systems.",
+      "Tested application performance and handled bug fixes to ensure stable production deployments.",
+      "Collaborated with cross-functional teams to align backend development with frontend components built in Next.js.",
+      "Occasionally contributed to frontend development and UI adjustments when needed.",
+      "Gained hands-on experience with agile workflows, code versioning (Git), and real-time feature testing."
+    ],
     tools: [
       "Next.js",
       "TypeScript",
-      "JavaScript",
-      "Node.js",
-      "Express.js",
       "Firebase",
+      "JavaScript",
       "NoSQL",
+      "Node.js",
+      "Express.js"
     ],
   },
 ];
@@ -46,20 +58,32 @@ function Experience() {
                 <div>
                   <h3 className="job-title">{experience.title}</h3>
                   <p className="experience-company">
-                    {experience.company}
+                    {experience.company}{" "}
                     <a
                       href={experience.companyWebsite}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="company-website-link"
+                      aria-label={`${experience.company} website`}
                     >
-                      (Website)
+                      <FiExternalLink size={16} />
                     </a>
                   </p>
-                  <p className="experience-tools">
-                    <strong>Tools & Technologies: </strong>
-                    {experience.tools.join(", ")}
-                  </p>
+                  <ul className="experience-description-list">
+                    {experience.description.map((point, index) => (
+                      <li key={index}>{point}</li>
+                    ))}
+                  </ul>
+                  <div className="experience-tools">
+                    <strong>Tools & Technologies:</strong>
+                    <div className="tools-badge-container">
+                      {experience.tools.map((tool, index) => (
+                        <span key={index} className="tool-badge">
+                          {tool}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

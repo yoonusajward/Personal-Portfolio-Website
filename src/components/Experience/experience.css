@@ -111,11 +111,44 @@
 .experience-tools {
   font-size: 0.875rem;
   color: #7c7c7c;
+  margin-top: 0.5rem;
+}
+
+.experience-description-list {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  list-style-type: disc;
+}
+
+/* Tool badges */
+.tools-badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tool-badge {
+  background-color: #e4951e;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.tool-badge:hover {
+  background-color: #c57c0f;
 }
 
 /* Responsive Styles */
 
-/* Tablet (768px and below) */
 @media screen and (max-width: 768px) {
   .experience-section {
     padding: 2.5rem 1rem;
@@ -141,9 +174,13 @@
   .experience-tools {
     font-size: 0.8rem;
   }
+
+  .experience-description-list {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
 }
 
-/* Mobile (480px and below) */
 @media screen and (max-width: 480px) {
   .experience-section {
     padding: 2rem 1rem;
@@ -168,5 +205,10 @@
 
   .experience-tools {
     font-size: 0.75rem;
+  }
+
+  .experience-description-list {
+    font-size: 0.875rem;
+    line-height: 1.6;
   }
 }
