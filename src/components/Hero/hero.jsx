@@ -1,29 +1,28 @@
 import React from "react";
-import "./hero.css";
-import heroimage from "../../assets/hero-image.png";
 import { FaDownload, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-scroll";
+import heroimage from "../../assets/hero-image.png";
+import "./hero.css";
 
 const Hero = () => {
   return (
-    <section id="hero" className="heroSection">
+    <section id="hero" className="heroSection" aria-label="Introduction">
       <div className="heroContainer">
-        <span className="heroHello">Hello,</span>
+        <p className="heroHello" aria-label="Greeting">Hello,</p>
         <h1 className="heroTitle">
           I'm <span className="heroName">Yoonus</span> Ajward
         </h1>
-        <h2 className="heroSubtitle">I'm a Software Engineer Intern</h2>
+        <h2 className="heroSubtitle">Software Engineer</h2>
         <p className="heroDescription">
-          A passionate software engineer with expertise in full stack web and
-          mobile application development. I strive to create innovative and
-          efficient solutions that make an impact.
+          I am a passionate software engineer specialising in full stack web and mobile application development. I enjoy crafting efficient, user-centric solutions that create meaningful impact.
         </p>
-        <div className="iconRow">
+        <div className="iconRow" role="navigation" aria-label="Social media links">
           <a
             href="https://www.linkedin.com/in/yoonus-ajward-461064239/"
             target="_blank"
             rel="noopener noreferrer"
             className="iconButton"
+            aria-label="LinkedIn Profile"
           >
             <FaLinkedin />
           </a>
@@ -32,6 +31,7 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="iconButton"
+            aria-label="GitHub Profile"
           >
             <FaGithub />
           </a>
@@ -40,27 +40,29 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="iconButton"
+            aria-label="Send Email"
           >
             <FaEnvelope />
           </a>
         </div>
         <div className="buttonRow">
           <a
-            href={`${process.env.PUBLIC_URL}/Yoonus_Ajward_Software_Engineer_Intern_CV.pdf`}
+            href={`${process.env.PUBLIC_URL}/Yoonus_Ajward_Software_Engineer_CV.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="heroBtn"
+            aria-label="Download Resume"
           >
-            <FaDownload className="icon" /> Get Resume
+            <FaDownload className="icon" /> Download Resume
           </a>
-          <Link to="contact" smooth duration={500}>
+          <Link to="contact" smooth duration={500} aria-label="Scroll to Contact section">
             <button className="heroBtn">
               <FaEnvelope className="icon" /> Contact Me
             </button>
           </Link>
         </div>
       </div>
-      <img src={heroimage} alt="Hero" className="heroImage" />
+      <img src={heroimage} alt="Portrait of Yoonus Ajward" className="heroImage" />
     </section>
   );
 };

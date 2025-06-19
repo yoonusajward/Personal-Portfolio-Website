@@ -21,8 +21,8 @@ const educations = [
     grade: "Completed",
     institution: "APIIT Sri Lanka",
     duration: "April 2022 - December 2023",
-    coursework:
-      "Database, Networking, Professional Practice, Programming, Computer System Architecture, Managing Successful Computing Project, Security, Web Design Development, Advanced Programming, Business Intelligence, Computer Research Project, System Analysis Design, Application Programming Interface, Data Structures and Algorithms, Discrete Mathematics",
+    // coursework:
+    //   "Database, Networking, Professional Practice, Programming, Computer System Architecture, Managing Successful Computing Project, Security, Web Design Development, Advanced Programming, Business Intelligence, Computer Research Project, System Analysis Design, Application Programming Interface, Data Structures and Algorithms, Discrete Mathematics",
   },
 ];
 

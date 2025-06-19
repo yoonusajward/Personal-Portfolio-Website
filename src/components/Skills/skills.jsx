@@ -8,6 +8,7 @@ import Teamwork from "../../assets/teamwork.png";
 import InterpersonalSkills from "../../assets/interpersonal-skills.png";
 import TimeManagement from "../../assets/time-management.png";
 import Adaptability from "../../assets/adaptability.png";
+import MaterialUI from "../../assets/materialui.svg";
 
 import {
   FaReact,
@@ -25,6 +26,7 @@ import {
   FaAws,
   FaLaravel,
 } from "react-icons/fa";
+
 import {
   SiKotlin,
   SiExpress,
@@ -32,8 +34,11 @@ import {
   SiMongodb,
   SiAndroidstudio,
   SiPostman,
+  SiNextdotjs,
+  SiTypescript,
 } from "react-icons/si";
-import { RiTailwindCssFill, RiFirebaseFill } from "react-icons/ri";
+
+import { RiTailwindCssFill, RiFirebaseFill, RiVercelFill } from "react-icons/ri";
 import { FaGitAlt } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
 
@@ -45,6 +50,7 @@ function Skills() {
       category: "Programming Languages",
       items: [
         { name: "JavaScript", icon: <FaJs size={40} /> },
+        { name: "TypeScript", icon: <SiTypescript size={40} /> },
         { name: "PHP", icon: <FaPhp size={40} /> },
         { name: "Python", icon: <FaPython size={40} /> },
         { name: "Java", icon: <FaJava size={40} /> },
@@ -56,11 +62,22 @@ function Skills() {
       category: "Web Development",
       items: [
         { name: "React", icon: <FaReact size={40} /> },
+        { name: "Next.js", icon: <SiNextdotjs size={40} /> },
         { name: "Vue.js", icon: <FaVuejs size={40} /> },
         { name: "HTML", icon: <FaHtml5 size={40} /> },
         { name: "CSS", icon: <FaCss3 size={40} /> },
         { name: "Tailwind CSS", icon: <RiTailwindCssFill size={40} /> },
         { name: "Bootstrap", icon: <FaBootstrap size={40} /> },
+        {
+          name: "Material UI",
+          icon: (
+            <img
+              src={MaterialUI}
+              alt="Material UI"
+              style={{ width: 40, height: 40 }}
+            />
+          ),
+        },
         { name: "Laravel", icon: <FaLaravel size={40} /> },
         { name: "Node.js", icon: <FaNodeJs size={40} /> },
         { name: "Express.js", icon: <SiExpress size={40} /> },
@@ -75,6 +92,7 @@ function Skills() {
         { name: "Android Studio", icon: <SiAndroidstudio size={40} /> },
         { name: "Postman", icon: <SiPostman size={40} /> },
         { name: "AWS", icon: <FaAws size={40} /> },
+        { name: "Vercel", icon: <RiVercelFill size={40} /> },
       ],
     },
     {

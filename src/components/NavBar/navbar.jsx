@@ -1,15 +1,26 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../../assets/logo_navbar.png";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { FaEnvelope, FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
+  // Scroll smoothly to the contact section with offset
+  const scrollToContact = () => {
+    const contactElem = document.getElementById("contact");
+    if (contactElem) {
+      // scrollTo expects a pixel value for position; subtract offset of 100 as per your logic
+      scroll.scrollTo(contactElem.offsetTop - 100);
+    }
+  };
+
   return (
     <nav className="navbar">
       <img src={logo} alt="logo" className="logo" />
+
+      {/* Desktop Menu */}
       <div className="desktopMenu">
         <Link
           activeClass="active"
@@ -89,22 +100,27 @@ const Navbar = () => {
           Certifications
         </Link>
       </div>
+
+      {/* Desktop Contact Button */}
       <button
         className="desktopMenuBtn"
         aria-label="Go to Contact"
-        onClick={() => {
-          document
-            .getElementById("contact")
-            .scrollIntoView({ behavior: "smooth" });
-        }}
+        onClick={scrollToContact}
       >
         <FaEnvelope className="desktopMenuIcon" />
         Contact Me
       </button>
 
-      <div className="mobileMenuIcon" onClick={() => setShowMenu(!showMenu)}>
+      {/* Mobile Menu Toggle Button */}
+      <button
+        className="mobileMenuIcon"
+        aria-label={showMenu ? "Close menu" : "Open menu"}
+        onClick={() => setShowMenu(!showMenu)}
+      >
         {showMenu ? <FaTimes size={24} /> : <FaBars size={24} />}
-      </div>
+      </button>
+
+      {/* Mobile Menu */}
       {showMenu && (
         <div className="mobileMenu">
           <Link

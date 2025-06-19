@@ -32,7 +32,6 @@
 }
 
 .job-title {
-  background: white;
   border-radius: 0.5rem;
   font-size: 1.25rem;
   color: rgb(30, 30, 30);
@@ -60,7 +59,8 @@
 }
 
 .experience-duration {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #e4951e;
   text-align: center;
   margin-bottom: 1rem;
@@ -79,14 +79,6 @@
 
 .experience-icon:hover {
   transform: scale(1.2);
-}
-
-.experience-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  text-align: left;
 }
 
 .experience-company {
@@ -109,7 +101,7 @@
 }
 
 .experience-tools {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #7c7c7c;
   margin-top: 0.5rem;
 }
@@ -124,7 +116,6 @@
   list-style-type: disc;
 }
 
-/* Tool badges */
 .tools-badge-container {
   display: flex;
   flex-wrap: wrap;
@@ -135,7 +126,7 @@
 .tool-badge {
   background-color: #e4951e;
   color: white;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   padding: 0.3rem 0.7rem;
   border-radius: 999px;
   font-weight: 500;
@@ -149,66 +140,89 @@
 
 /* Responsive Styles */
 
-@media screen and (max-width: 768px) {
-  .experience-section {
-    padding: 2.5rem 1rem;
-  }
-
-  .experience-title {
-    font-size: 1.25rem;
-    padding: 0.5rem 1.5rem;
-  }
-
-  .experience-card {
-    padding: 1.25rem;
-  }
-
-  .experience-duration {
-    font-size: 0.95rem;
-  }
-
-  .experience-title {
-    font-size: 1.125rem;
-  }
-
-  .experience-tools {
-    font-size: 0.8rem;
-  }
-
-  .experience-description-list {
-    font-size: 0.95rem;
-    line-height: 1.7;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .experience-section {
     padding: 2rem 1rem;
   }
 
+  .experience-title-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    gap: 0.5rem;
+  }
+
   .experience-title {
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    white-space: nowrap;
+    background: white;
+    border-radius: 0.5rem;
+    color: #1a1443;
+    text-transform: uppercase;
+  }
+
+  .experience-divider {
+    width: 3rem;
   }
 
   .experience-card {
     padding: 1rem;
+    text-align: center;
   }
 
   .experience-duration {
-    font-size: 0.875rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
   }
 
-  .experience-title {
+  .experience-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .experience-icon {
+    order: -1;
+  }
+
+  .job-title {
     font-size: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.75rem;
   }
 
-  .experience-tools {
-    font-size: 0.75rem;
+  .experience-company {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #1a1443;
   }
 
   .experience-description-list {
+    padding-left: 0;
+    text-align: left;
     font-size: 0.875rem;
-    line-height: 1.6;
+    line-height: 1.5;
+  }
+
+  .experience-description-list li {
+    margin-left: 1rem;
+    padding-left: 0;
+  }
+
+  .experience-tools {
+    text-align: center;
+    font-size: 0.75rem;
+  }
+
+  .tools-badge-container {
+    justify-content: center;
+  }
+
+  .tool-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
   }
 }

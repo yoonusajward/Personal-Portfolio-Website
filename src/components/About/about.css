@@ -1,19 +1,16 @@
 .aboutSection {
   padding: 4rem 2rem;
-  color: #f8f9fa;
-  width: 100vw;
+  width: 100%;
   max-width: 75rem;
   margin: 0 auto;
+  color: #f8f9fa;
 }
 
 .aboutContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  max-width: 75rem;
-  margin: 0 auto;
+  gap: 2rem;
 }
 
 .aboutText {
@@ -22,18 +19,19 @@
 }
 
 .aboutHeading {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: 700;
   color: #f39c12;
   margin-bottom: 1rem;
 }
 
 .aboutDescription {
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 1.8;
-  color: white;
-  max-width: 40rem;
+  color: #e0e0e0;
+  max-width: 42rem;
   margin: 0 auto;
+  text-align: center; /* Default for screens <1024px */
 }
 
 .aboutImageContainer {
@@ -48,24 +46,21 @@
   height: 280px;
   border-radius: 12px;
   object-fit: cover;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.aboutImage:hover {
-  transform: scale(1.1);
-  filter: grayscale(0);
-}
-
-/* Default grayscale filter for desktop view */
-.aboutImageContainer img {
+  transition: transform 0.4s ease, filter 0.4s ease;
   filter: grayscale(100%);
 }
 
-/* Desktop */
+.aboutImage:hover {
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
+
+/* Large Screens (≥1024px) */
 @media screen and (min-width: 1024px) {
   .aboutContainer {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
     text-align: left;
   }
 
@@ -78,38 +73,44 @@
   }
 
   .aboutDescription {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    text-align: justify;
   }
 }
 
-/* Tablet (768px and below) */
+/* Tablets (≤768px) */
 @media screen and (max-width: 768px) {
   .aboutHeading {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 
   .aboutDescription {
-    font-size: 0.95rem;
+    font-size: 1rem;
+    text-align: center;
   }
 
-  /* Remove grayscale effect on mobile devices */
+  .aboutImage {
+    width: 240px;
+    height: 240px;
+  }
+
   .aboutImageContainer img {
     filter: none;
   }
 }
 
-/* Mobile (480px and below) */
+/* Mobiles (≤480px) */
 @media screen and (max-width: 480px) {
-  .aboutImage {
-    width: 200px;
-    height: 200px;
-  }
-
   .aboutHeading {
-    font-size: 1.75rem;
+    font-size: 1.85rem;
   }
 
   .aboutDescription {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+  }
+
+  .aboutImage {
+    width: 180px;
+    height: 180px;
   }
 }
