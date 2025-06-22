@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Personal-Portfolio-Website/static/css/main.45dc04e5.css",
-    "main.js": "/Personal-Portfolio-Website/static/js/main.740f047e.js",
+    "main.css": "/Personal-Portfolio-Website/static/css/main.a8830624.css",
+    "main.js": "/Personal-Portfolio-Website/static/js/main.a6adb809.js",
     "static/media/hero-image.png": "/Personal-Portfolio-Website/static/media/hero-image.f01add477c9c887e7e19.png",
     "static/media/about-image.png": "/Personal-Portfolio-Website/static/media/about-image.e828251ee373880f7bab.png",
     "static/media/journey-diaries-homepage.png": "/Personal-Portfolio-Website/static/media/journey-diaries-homepage.2a130b9fcab6692285d9.png",
@@ -9,6 +9,7 @@
     "static/media/triptuner-interfaces.png": "/Personal-Portfolio-Website/static/media/triptuner-interfaces.ab2bb802b672327627ba.png",
     "static/media/portfolio-homepage.png": "/Personal-Portfolio-Website/static/media/portfolio-homepage.56d6fac5c520ff111e96.png",
     "static/media/ecommerce-homepage.png": "/Personal-Portfolio-Website/static/media/ecommerce-homepage.17ca72509a3a3cbadd3a.png",
+    "static/media/yo-app-homepage.png": "/Personal-Portfolio-Website/static/media/yo-app-homepage.4f65007b2ea3bcada1a2.png",
     "static/media/blackberry-homepage.png": "/Personal-Portfolio-Website/static/media/blackberry-homepage.0db5a18fc5af72c38b9a.png",
     "static/media/adaptability.png": "/Personal-Portfolio-Website/static/media/adaptability.d66dbbe31eb86c59cfab.png",
     "static/media/critical-thinking.png": "/Personal-Portfolio-Website/static/media/critical-thinking.fd179e7ef6f717dd5bca.png",
@@ -24,11 +25,11 @@
     "static/media/logo_navbar.png": "/Personal-Portfolio-Website/static/media/logo_navbar.984a94726a25ef866fb4.png",
     "static/media/materialui.svg": "/Personal-Portfolio-Website/static/media/materialui.4d05798a9d3243e7634aa7741f05e4a7.svg",
     "index.html": "/Personal-Portfolio-Website/index.html",
-    "main.45dc04e5.css.map": "/Personal-Portfolio-Website/static/css/main.45dc04e5.css.map",
-    "main.740f047e.js.map": "/Personal-Portfolio-Website/static/js/main.740f047e.js.map"
+    "main.a8830624.css.map": "/Personal-Portfolio-Website/static/css/main.a8830624.css.map",
+    "main.a6adb809.js.map": "/Personal-Portfolio-Website/static/js/main.a6adb809.js.map"
   },
   "entrypoints": [
-    "static/css/main.45dc04e5.css",
-    "static/js/main.740f047e.js"
+    "static/css/main.a8830624.css",
+    "static/js/main.a6adb809.js"
   ]
 }
