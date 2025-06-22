@@ -34,9 +34,11 @@ const Contact = () => {
         <h2 className="contact-title">Contact</h2>
         <div className="contact-divider"></div>
       </div>
+
       <p className="contact-description">
-        Please fill out the form below to discuss any work opportunities.
+        Feel free to reach out by filling out the form below. I'm happy to discuss project opportunities, collaborations, or any tech-related inquiries.
       </p>
+
       <form className="contactForm" ref={form} onSubmit={sendEmail}>
         <input
           type="text"
@@ -63,15 +65,18 @@ const Contact = () => {
           Submit
         </button>
       </form>
+
       {isSubmitted && (
-        <p className="successMessage">Message sent successfully!</p>
+        <p className="successMessage">Your message has been sent successfully!</p>
       )}
+
       <div className="links">
         <a
           href="https://www.linkedin.com/in/yoonus-ajward-461064239/"
           target="_blank"
           rel="noopener noreferrer"
           className="social-link linkedin"
+          aria-label="Visit my LinkedIn profile"
         >
           <FaLinkedin size={30} />
         </a>
@@ -80,10 +85,15 @@ const Contact = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="social-link github"
+          aria-label="Visit my GitHub profile"
         >
           <FaGithub size={30} />
         </a>
-        <a href="mailto:yoonusajward27@gmail.com" className="social-link email">
+        <a
+          href="mailto:yoonusajward27@gmail.com"
+          className="social-link email"
+          aria-label="Send me an email"
+        >
           <FaEnvelope size={30} />
         </a>
       </div>

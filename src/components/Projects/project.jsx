@@ -25,7 +25,7 @@ function Projects() {
     {
       name: "TripTuner - AI Travel Plan Mobile Application",
       description:
-        "TripTuner is a mobile application designed to help users plan travel itineraries using a trained GPT model. The app incorporates a user-friendly interface to enhance the overall experience.",
+        "TripTuner is a mobile app designed to help users plan travel itineraries using a trained GPT model. The app features a user-friendly interface for an enhanced experience.",
       tools: [
         "Kotlin",
         "Python",
@@ -43,7 +43,7 @@ function Projects() {
     {
       name: "Alfie Pet Supplies - Pet-Oriented Web App",
       description:
-        "Alfie Pet Supplies is a pet-oriented web app that allows users to browse and order pet products. With a responsive UI, the platform integrates external APIs for features like a cart system, pet adoption, health tips, and dynamic content from the Cat Fact API, ensuring a smooth and interactive user experience.",
+        "Alfie Pet Supplies allows users to browse and order pet products with a responsive UI. It integrates external APIs for a cart system, pet adoption, health tips, and dynamic content from the Cat Fact API, ensuring a smooth and interactive user experience.",
       tools: [
         "Vue.js",
         "Tailwind CSS",
@@ -109,7 +109,7 @@ function Projects() {
   ];
 
   return (
-    <div id="projects" className="projects-section">
+    <section id="projects" className="projects-section" aria-label="Projects">
       <div className="projects-header">
         <div className="projects-divider"></div>
         <h2 className="projects-title">Projects</h2>
@@ -117,26 +117,26 @@ function Projects() {
       </div>
 
       <p className="projects-description">
-        I’m passionate about creating software that’s not only functional but
-        also meticulously crafted. My dedication to detail ensures that every
-        project I work on meets the highest standards. I’m excited to use my
-        skills and experience to help businesses achieve their goals and build a
-        powerful online presence.
+        I’m passionate about creating software that is not only functional but
+        also meticulously crafted. My dedication to detail ensures every
+        project meets the highest standards. I look forward to apply my
+        skills and experience to help businesses achieve their goals and build
+        a strong online presence.
       </p>
 
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <div key={index} className="project-card">
+          <article key={index} className="project-card">
             <img
               src={project.image}
-              alt={project.name}
+              alt={project.name ? project.name : "Project screenshot"}
               className="project-image"
             />
             <h3 className="project-name">{project.name}</h3>
             <p className="project-description">{project.description}</p>
             <div className="project-tools">
-              {project.tools.map((tool, toolIndex) => (
-                <span key={toolIndex} className="tool">
+              {project.tools.map((tool) => (
+                <span key={tool} className="tool">
                   {tool}
                 </span>
               ))}
@@ -147,6 +147,7 @@ function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="github-link"
+                aria-label={`GitHub repository for ${project.name}`}
               >
                 <FaGithub size={30} />
               </a>
@@ -156,16 +157,17 @@ function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="demo-link"
+                  aria-label={`Live demo of ${project.name}`}
                 >
                   <GrView size={25} />
-                  Demo
+                  <span>Demo</span>
                 </a>
               )}
             </div>
-          </div>
+          </article>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

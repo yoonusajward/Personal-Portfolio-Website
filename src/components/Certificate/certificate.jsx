@@ -8,7 +8,7 @@ const certifications = [
   {
     title: "JavaScript Essential Training",
     organisation: "Cisco Networking Academy",
-    skills: "JavaScript fundamentals, Functions, Loops, and DOM scripting",
+    skills: "JavaScript fundamentals, functions, loops, and DOM scripting",
     date: "Nov 2024",
     link: "https://www.credly.com/badges/a7cbf7f7-e8ef-4429-ae27-bbc2913ce6eb/linked_in_profile",
   },
@@ -29,7 +29,7 @@ const certifications = [
   {
     title: "JavaScript for Beginners",
     organisation: "LinkedIn Learning",
-    skills: "JavaScript fundamentals, loops, and DOM scripting",
+    skills: "JavaScript basics, loops, functions, and DOM manipulation",
     date: "Dec 2023",
     link: "https://www.linkedin.com/in/yoonus-ajward-461064239/details/certifications/",
   },
@@ -50,14 +50,14 @@ const certifications = [
   {
     title: "HTML for Programmers",
     organisation: "LinkedIn Learning",
-    skills: "HTML, Web development, GitHub Codespaces",
+    skills: "HTML, web fundamentals, GitHub Codespaces",
     date: "Nov 2023",
     link: "https://www.linkedin.com/in/yoonus-ajward-461064239/details/certifications/",
   },
   {
     title: "Python for Beginners",
     organisation: "University of Moratuwa",
-    skills: "Python, Object-Oriented Programming (OOP) principles",
+    skills: "Python programming, object-oriented principles",
     date: "Nov 2023",
     link: "https://www.linkedin.com/in/yoonus-ajward-461064239/details/certifications/",
   },
@@ -72,8 +72,7 @@ const Certificate = () => {
         <div className="certificate-divider"></div>
       </div>
       <p className="certificate-description">
-        Below are some of the certifications I have completed to enhance my
-        skills and knowledge in technology.
+        Here is a selection of professional certifications I’ve earned to deepen my expertise and stay current with evolving technologies.
       </p>
       <div className="certificate-grid">
         {certifications.map((cert, index) => (
@@ -95,6 +94,7 @@ const Certificate = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="certificate-link"
+                aria-label={`View certification for ${cert.title}`}
               >
                 <FiExternalLink />
               </a>

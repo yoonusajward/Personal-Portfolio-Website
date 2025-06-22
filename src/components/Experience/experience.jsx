@@ -10,26 +10,26 @@ const experiences = [
     title: "Backend Developer Intern",
     company: "Accron Revolutions",
     companyWebsite: "https://www.accronautobot.com/",
-    duration: "Jan 2025 - Present",
+    duration: "Jan 2025 – Present",
     description: [
-      "Contributed to real-world projects including POS systems, order management platforms, websites, and mobile apps.",
-      "Developed and maintained scalable backend features using Firebase and RESTful APIs.",
-      "Structured and optimized Firestore (NoSQL) databases for performance and reliability.",
-      "Implemented new backend functionalities, debugged existing code, and improved system architecture.",
-      "Integrated APIs and connected cloud-based services to ensure smooth data flow across systems.",
-      "Tested application performance and handled bug fixes to ensure stable production deployments.",
-      "Collaborated with cross-functional teams to align backend development with frontend components built in Next.js.",
-      "Occasionally contributed to frontend development and UI adjustments when needed.",
-      "Gained hands-on experience with agile workflows, code versioning (Git), and real-time feature testing."
+      "Worked on  real-world projects including websites, mobile apps, POS systems, and order management platforms.",
+      "Built and maintained backend services using Firebase, Node.js, and RESTful APIs.",
+      "Designed and optimized Firestore databases to improve data structure and query performance.",
+      "Integrated external APIs and managed cloud-based services to streamline data flow across platforms.",
+      "Resolved bugs and performance issues in backend logic to ensure stable deployment and user experience.",
+      "Collaborated with frontend developers to deliver seamless integration with UI components built in Next.js.",
+      "Assisted in frontend enhancements and UI fixes as required.",
+      "Participated in agile sprints, version control workflows, and regular feature testing."
     ],
     tools: [
-      "Next.js",
-      "TypeScript",
-      "Firebase",
-      "JavaScript",
-      "NoSQL",
-      "Node.js",
-      "Express.js"
+    "TypeScript",
+    "Next.js",
+    "Node.js",
+    "JavaScript",
+    "Express.js",
+    "Firebase",
+    "Firestore",
+    "NoSQL"
     ],
   },
 ];

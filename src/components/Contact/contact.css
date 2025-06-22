@@ -34,12 +34,12 @@
 }
 
 .contact-description {
-  text-align: center;
-  font-size: medium;
-  color: #ccc;
-  max-width: 60rem;
-  line-height: 1.6;
-  margin-top: 1rem;
+    text-align: center;
+    font-size: 1.05rem;
+    color: #ccc;
+    margin: 0 auto 2rem;
+    max-width: 60rem;
+    line-height: 1.6;
 }
 
 .contactForm {

@@ -32,7 +32,7 @@
   
   .projects-description {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.05rem;
     color: #ccc;
     margin: 0 auto 2rem;
     max-width: 60rem;
@@ -47,7 +47,7 @@
   
   .project-card {
     position: relative;
-    background: #11152c;
+    background: #111111;
     padding: 1.5rem;
     border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

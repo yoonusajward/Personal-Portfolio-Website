@@ -14,7 +14,7 @@ const Hero = () => {
         </h1>
         <h2 className="heroSubtitle">Software Engineer</h2>
         <p className="heroDescription">
-          I am a passionate software engineer specialising in full stack web and mobile application development. I enjoy crafting efficient, user-centric solutions that create meaningful impact.
+          I'm a passionate software engineer specializing in full-stack web and mobile application development. I enjoy crafting efficient, user-centric solutions that make a meaningful impact.
         </p>
         <div className="iconRow" role="navigation" aria-label="Social media links">
           <a
