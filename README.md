@@ -68,6 +68,13 @@ npm run build
 ```
 The production-ready files will be available in the build folder.
 
+### 6. **Deploy to GitHub Pages**  
+To deploy the application using GitHub Pages:
+```bash
+npm run deploy
+```
+This will automatically build and push the site to the gh-pages branch of your GitHub repository, making it live.
+
 ## 📋 Usage Instructions
 
 ### 1. **Explore the Portfolio**
