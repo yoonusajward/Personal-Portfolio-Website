@@ -10,13 +10,24 @@ import taskManagerImage from "../../assets/task-manager-homepage.png";
 import ecommerceImage from "../../assets/ecommerce-homepage.png";
 import taskTrackerImage from "../../assets/task-tracker-homepage.png";
 import portfolioImage from "../../assets/portfolio-homepage.png";
+import yoAppImage from "../../assets/yo-app-homepage.png";
 
 function Projects() {
   const projects = [
     {
+      name: "Yo Social Media App",
+      description:
+        "A full-stack social media platform enabling user registration, real-time posting, likes, comments, and profile management. Built with a responsive design for both web and mobile, it delivers a smooth and engaging user experience.",
+      tools: [
+        "Next.js", "React", "TypeScript", "Firestore", "Firebase", "Tailwind CSS", "Redux Toolkit", "Material UI"
+      ],
+      demo: "https://yo-app-social-media-app.vercel.app/",
+      image: yoAppImage,
+    },
+    {
       name: "Personal Portfolio Website",
       description:
-        "A responsive portfolio website showcasing my projects, skills, and experience. Built using React and CSS, it features dynamic sections, a projects gallery, and seamless navigation. It provides a platform to highlight my professional journey and accomplishments.",
+        "A responsive portfolio website showcasing my projects, skills, and experience. Built using React and CSS, it features dynamic sections, a projects gallery, and seamless navigation.",
       tools: ["React", "CSS", "React Router", "EmailJS", "JavaScript"],
       github: "https://github.com/yoonusajward/Personal-Portfolio-Website",
       demo: "https://yoonusajward.github.io/Personal-Portfolio-Website/",
@@ -43,7 +54,7 @@ function Projects() {
     {
       name: "Alfie Pet Supplies - Pet-Oriented Web App",
       description:
-        "Alfie Pet Supplies allows users to browse and order pet products with a responsive UI. It integrates external APIs for a cart system, pet adoption, health tips, and dynamic content from the Cat Fact API, ensuring a smooth and interactive user experience.",
+        "Alfie Pet Supplies allows users to browse and order pet products with a responsive UI. It integrates external APIs for a cart system, pet adoption, health tips, and dynamic content from the Cat Fact API.",
       tools: [
         "Vue.js",
         "Tailwind CSS",
@@ -60,7 +71,7 @@ function Projects() {
     {
       name: "E-commerce Fashion Store",
       description:
-        "A fully functional e-commerce site built using React. Features include product listings, a shopping cart, and a responsive checkout process for seamless shopping.",
+        "A fully functional e-commerce site built using React. Features include product listings, a shopping cart, and a responsive checkout process.",
       tools: ["React", "CSS", "HTML", "React Router", "JavaScript"],
       github: "https://github.com/yoonusajward/ecommerce-react-project",
       demo: "https://yoonusajward.github.io/ecommerce-react-project/",
@@ -69,7 +80,7 @@ function Projects() {
     {
       name: "BlackBerry CRUD Application",
       description:
-        "A web application built with the MEVN stack to manage business data. It offers full CRUD functionality for customers, employees, products, and sales, with a centralised dashboard for key metrics, enabling data-driven insights and smooth navigation.",
+        "A web application built with the MEVN stack to manage business data. Includes full CRUD operations, a dashboard, and role-based views.",
       tools: ["MongoDB", "Express.js", "Vue.js", "Node.js", "CSS", "Axios"],
       github: "https://github.com/yoonusajward/BlackBerry-CRUD-Application",
       image: blackBerryImage,
@@ -77,7 +88,7 @@ function Projects() {
     {
       name: "Task Manager Application",
       description:
-        "A full-stack task management app built with React, Node.js (Express), and MySQL. It supports adding, editing, deleting, and filtering tasks, with task statuses for better organisation and efficient management.",
+        "A full-stack task management app built with React, Node.js (Express), and MySQL. It supports CRUD operations with filtering and status updates.",
       tools: ["React", "Node.js", "Express.js", "MySQL", "Tailwind CSS"],
       github: "https://github.com/yoonusajward/task-manager-app",
       image: taskManagerImage,
@@ -85,7 +96,7 @@ function Projects() {
     {
       name: "Task Tracker Application",
       description:
-        "A web-based task management application built with Laravel, featuring user authentication, real-time updates using Livewire, and a modern UI powered by Filament. It enables users to manage tasks efficiently with full CRUD functionality.",
+        "A web-based task manager built with Laravel, including Livewire, Filament UI, and MySQL integration. Supports real-time updates and full CRUD features.",
       tools: ["Laravel", "PHP", "Blade", "Livewire", "Filament", "MySQL"],
       github: "https://github.com/yoonusajward/Task-Tracker-Laravel",
       image: taskTrackerImage,
@@ -93,7 +104,7 @@ function Projects() {
     {
       name: "Journey Diaries - Travel Blog",
       description:
-        "Journey Diaries is a responsive travel blog offering interactive content for enthusiasts. Features include real-time weather updates, travel videos, secure payments, and a custom search engine, combining an engaging front-end with robust API-driven back-end functionality.",
+        "A responsive travel blog with real-time weather updates, embedded travel videos, secure payment options, and a custom search experience.",
       tools: [
         "HTML",
         "CSS",
@@ -119,7 +130,7 @@ function Projects() {
       <p className="projects-description">
         I’m passionate about creating software that is not only functional but
         also meticulously crafted. My dedication to detail ensures every
-        project meets the highest standards. I look forward to apply my
+        project meets the highest standards. I look forward to applying my
         skills and experience to help businesses achieve their goals and build
         a strong online presence.
       </p>
@@ -129,28 +140,30 @@ function Projects() {
           <article key={index} className="project-card">
             <img
               src={project.image}
-              alt={project.name ? project.name : "Project screenshot"}
+              alt={project.name}
               className="project-image"
             />
             <h3 className="project-name">{project.name}</h3>
             <p className="project-description">{project.description}</p>
             <div className="project-tools">
-              {project.tools.map((tool) => (
-                <span key={tool} className="tool">
+              {project.tools.map((tool, toolIndex) => (
+                <span key={toolIndex} className="tool">
                   {tool}
                 </span>
               ))}
             </div>
             <div className="project-card-links">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="github-link"
-                aria-label={`GitHub repository for ${project.name}`}
-              >
-                <FaGithub size={30} />
-              </a>
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="github-link"
+                  aria-label={`GitHub repository for ${project.name}`}
+                >
+                  <FaGithub size={30} />
+                </a>
+              )}
               {project.demo && (
                 <a
                   href={project.demo}
