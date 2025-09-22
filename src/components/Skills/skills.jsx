@@ -51,10 +51,10 @@ function Skills() {
       items: [
         { name: "JavaScript", icon: <FaJs size={40} /> },
         { name: "TypeScript", icon: <SiTypescript size={40} /> },
-        { name: "PHP", icon: <FaPhp size={40} /> },
         { name: "Python", icon: <FaPython size={40} /> },
         { name: "Java", icon: <FaJava size={40} /> },
         { name: "Kotlin", icon: <SiKotlin size={40} /> },
+        { name: "PHP", icon: <FaPhp size={40} /> },
         { name: "C#", icon: <FaCuttlefish size={40} /> },
       ],
     },

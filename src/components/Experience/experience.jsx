@@ -7,12 +7,38 @@ import GlowCard from "../GlowCard/glowcard";
 const experiences = [
   {
     id: 1,
+    title: "Associate Software Engineer",
+    company: "WIS Sri Lanka",
+    companyWebsite: "https://wisaccountancy.co.uk/",
+    duration: "September 2025 – Present",
+    description: [
+      "Building and maintaining full-stack applications using Python, Next.js, MERN, TypeScript, and Tailwind CSS.",
+      "Designed and developed scalable backend services and REST APIs while integrating with frontend interfaces.",
+      "Implemented responsive and dynamic UI components with Next.js and Tailwind for improved user experience.",
+      "Optimized database queries and server-side logic to enhance application performance and reliability.",
+      "Collaborated with product managers, designers, and QA engineers to deliver features aligned with business requirements.",
+      "Practiced agile development with sprint planning, code reviews, and version control using Git.",
+      "Contributed to both greenfield projects and existing systems, balancing innovation with maintenance."
+    ],
+    tools: [
+      "Python",
+      "Next.js",
+      "MERN Stack",
+      "TypeScript",
+      "Tailwind CSS",
+      "REST APIs",
+      "Git",
+      "Agile"
+    ],
+  },
+  {
+    id: 2,
     title: "Backend Developer Intern",
     company: "Accron Revolutions",
     companyWebsite: "https://www.accronautobot.com/",
-    duration: "Jan 2025 – Present",
+    duration: "January 2025 – July 2025",
     description: [
-      "Worked on  real-world projects including websites, mobile apps, POS systems, and order management platforms.",
+      "Worked on real-world projects including websites, mobile apps, POS systems, and order management platforms.",
       "Built and maintained backend services using Firebase, Node.js, and RESTful APIs.",
       "Designed and optimized Firestore databases to improve data structure and query performance.",
       "Integrated external APIs and managed cloud-based services to streamline data flow across platforms.",
@@ -22,14 +48,14 @@ const experiences = [
       "Participated in agile sprints, version control workflows, and regular feature testing."
     ],
     tools: [
-    "TypeScript",
-    "Next.js",
-    "Node.js",
-    "JavaScript",
-    "Express.js",
-    "Firebase",
-    "Firestore",
-    "NoSQL"
+      "TypeScript",
+      "Next.js",
+      "Node.js",
+      "JavaScript",
+      "Express.js",
+      "Firebase",
+      "Firestore",
+      "NoSQL"
     ],
   },
 ];

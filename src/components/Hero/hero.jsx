@@ -47,7 +47,7 @@ const Hero = () => {
         </div>
         <div className="buttonRow">
           <a
-            href={`${process.env.PUBLIC_URL}/Yoonus_Ajward_Associate_Software_Engineer_CV.pdf`}
+            href={`${process.env.PUBLIC_URL}/Yoonus_Associate_Software Engineer_CV.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="heroBtn"
